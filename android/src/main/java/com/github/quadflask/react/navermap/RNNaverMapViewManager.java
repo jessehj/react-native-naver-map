@@ -289,7 +289,7 @@ public class RNNaverMapViewManager extends ViewGroupManager<RNNaverMapViewContai
 
                 break;
             case ANIMATE_TO_COORDINATE:
-                mapView.setCenter(toNaverLatLng(args.getMap(0)));
+                mapView.setCenter(toNaverLatLng(args.getMap(0)), 14.0, null, null);
                 break;
 
             case SET_LOCATION_TRACKING_MODE:
