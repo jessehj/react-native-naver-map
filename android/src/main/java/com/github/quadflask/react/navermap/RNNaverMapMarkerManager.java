@@ -141,6 +141,16 @@ public class RNNaverMapMarkerManager extends EventEmittableViewGroupManager<RNNa
         view.setCaption(text, textSize, color, haloColor, align);
     }
 
+    @ReactProp(name = "isHideCollidedMarkers")
+    public void setIsHideCollidedMarkers(RNNaverMapMarker view, boolean isHideCollidedMarkers) {
+        view.setIsHideCollidedMarkers(isHideCollidedMarkers);
+    }
+
+    @ReactProp(name = "isForceShowIcon")
+    public void setIsForceShowIcon(RNNaverMapMarker view, boolean isForceShowIcon) {
+        view.setIsForceShowIcon(isForceShowIcon);
+    }
+
     @Override
     public void addView(RNNaverMapMarker parent, View child, int index) {
         parent.setCustomView(child, index);

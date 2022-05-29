@@ -116,6 +116,14 @@ public class RNNaverMapMarker extends ClickableRNNaverMapFeature<Marker> impleme
         }
     }
 
+    public void setIsHideCollidedMarkers(boolean isHideCollidedMarkers) {
+        feature.setHideCollidedMarkers(isHideCollidedMarkers);
+    }
+
+    public void setIsForceShowIcon(boolean forceShowIcon) {
+        feature.setForceShowIcon(forceShowIcon);
+    }
+
     public void setAlpha(float alpha) {
         feature.setAlpha(alpha);
     }
